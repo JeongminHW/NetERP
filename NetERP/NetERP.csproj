@@ -161,6 +161,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Controls\SideBar.ascx" />
     <Content Include="Controls\TopMenu.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
