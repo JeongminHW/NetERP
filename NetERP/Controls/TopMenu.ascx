@@ -31,7 +31,7 @@
     
     .top-info{
         background: #eef1f5;
-        padding: 4px;
+        padding: 4px 4px 4px 14px;
     }
 
     .info-row {
@@ -42,6 +42,7 @@
 
     .info-text{
         font-weight: bold;
+        color: #2f3b4c;
     }
 
     .left-group {
