@@ -165,7 +165,7 @@
                         <span class="sub-icon"></span> 회사등록정보
                     </div>
                     <div class="sub-body">
-                        <div class="menu-item" onclick="selectMenu(this)">회사등록</div>
+                        <div class="menu-item" onclick="loadPage('/Views/CompRegister.aspx', this)">회사등록</div>
                         <div class="menu-item" onclick="selectMenu(this)">사업장등록</div>
                         <div class="menu-item" onclick="selectMenu(this)">부서등록</div>
                         <div class="menu-item" onclick="selectMenu(this)">사원등록</div>
@@ -272,11 +272,17 @@
     }
 
     // ── 메뉴 항목 선택 ──
-    function selectMenu(item) {
-        document.querySelectorAll('.menu-item').forEach(function (el) {
+    function loadPage(url, item) {
+
+        // 메뉴 active 처리
+        document.querySelectorAll('.menu-item').forEach(el => {
             el.classList.remove('active');
         });
+
         item.classList.add('active');
+
+        // ★ 핵심: ERPMain의 iframe에 페이지 넣기
+        window.parent.document.getElementById("contentFrame").src = url;
     }
 
     // 사이드바 조절
