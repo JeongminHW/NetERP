@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title>ERP MAIN TEST</title>
+    <title>NET ERP MAIN</title>
 </head>
 
 <body style="margin: 0; padding: 0; overflow: hidden; height: 100vh; display: flex; flex-direction: column;">
@@ -14,8 +14,13 @@
     
     <div style="display: flex; flex: 1; overflow: hidden;">
         <uc:SideBar runat="server" ID="SideBar" />
-        <main style="flex: 1; overflow: auto; padding: 20px;">
-            </main>
+
+        <main style="flex: 1; overflow: hidden;">
+            <iframe id="contentFrame"
+                    name="contentFrame"
+                    style="width:100%; height:100%; border:none;">
+            </iframe>
+        </main>
     </div>
 </form>
 </body>
