@@ -166,7 +166,7 @@
                     </div>
                     <div class="sub-body">
                         <div class="menu-item" onclick="loadPage('/Views/CompRegister.aspx', this)">회사등록</div>
-                        <div class="menu-item" onclick="selectMenu(this)">사업장등록</div>
+                        <div class="menu-item" onclick="loadPage('/Views/WorkplaceRegister.aspx', this)">사업장등록</div>
                         <div class="menu-item" onclick="selectMenu(this)">부서등록</div>
                         <div class="menu-item" onclick="selectMenu(this)">사원등록</div>
                     </div>
